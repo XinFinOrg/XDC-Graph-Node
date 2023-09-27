@@ -27,6 +27,8 @@ docker compose -f docker-compose-xinfin.yml up
 
 [build from srouce step by step](./docs/deploy-from-source.md)
 
+Notice: please use Ubuntu 22.04, or upgrade protobuf-compiler to v3.12.4.
+
 ## 3) Query
 
 Subgraph example: https://github.com/gzliudan/bad-token-subgraph  

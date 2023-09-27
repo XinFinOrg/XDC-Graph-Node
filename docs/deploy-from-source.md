@@ -278,7 +278,8 @@ fi
 ### 3.4 Download and compile graph-node
 
 ```shell
-sudo apt install -y cmake
+sudo apt update
+sudo apt install -y cmake protobuf-compiler
 
 cd ${HOME}
 git clone https://github.com/XinFinOrg/XDC-Graph-Node.git graph-node.xdc
