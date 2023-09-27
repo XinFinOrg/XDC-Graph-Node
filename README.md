@@ -1,8 +1,17 @@
 # Graph node for xdc blockchain
 
-## 1. deploy from docker
+## About
 
-### 1.1 testnet
+- Support xdc-prefix and 0x-prefix
+- Bypass the `eth_getLogs` bug of xdc chain
+- Add flag `no_eip1898` for xdc chain
+- Provide new docker image
+
+## Deploy
+
+### 1. deploy from docker
+
+#### 1.1 testnet
 
 
 ```shell
@@ -13,7 +22,7 @@ cd docker
 docker compose -f docker-compose-apothem.yml up
 ```
 
-### 1.2 mainnet
+#### 1.2 mainnet
 
 ```shell
 git clone https://github.com/XinFinOrg/XDC-Graph-Node.git
@@ -23,16 +32,18 @@ cd docker
 docker compose -f docker-compose-xinfin.yml up
 ```
 
-## 2) deploy from srouce
+### 2. deploy from srouce
 
 [build from srouce step by step](./docs/deploy-from-source.md)
 
 Notice: please use Ubuntu 22.04, or upgrade protobuf-compiler to v3.12.4.
 
-## 3) Query
+## Query
 
-Subgraph example: https://github.com/gzliudan/bad-token-subgraph  
-Query URL: http://\<IP\>:8000/subgraphs/name/gzliudan/bad-token-subgraph-apothem  
+Subgraph example: https://github.com/gzliudan/bad-token-subgraph
+
+Query URL: http://\<IP\>:8000/subgraphs/name/gzliudan/bad-token-subgraph-apothem
+
 Query command:
 
 ```graphql
